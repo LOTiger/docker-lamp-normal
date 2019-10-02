@@ -1,4 +1,4 @@
-# docker-lamp
+# docker-lamp-normal
 一个基于docker构建的lamp应用，快速部署你的应用。
 
 
