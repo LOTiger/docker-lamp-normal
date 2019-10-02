@@ -30,7 +30,6 @@ services:
     container_name: mysql
     ports:
       - "3307:3306"
-    stdin_open: true
     tty: true
     volumes:
       - ./mysql/data/:/var/lib/mysql/
@@ -42,7 +41,6 @@ services:
     container_name: memcached
     ports:
       - "11211:11211"
-    stdin_open: true
     tty: true
     environment:
       - MEMCACHED_CACHE_SIZE=128

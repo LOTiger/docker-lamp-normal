@@ -1,2 +1,2 @@
 [mysqld]
-log-error=/var/log/mysql/error.log
+explicit_defaults_for_timestamp=true
