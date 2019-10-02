@@ -17,6 +17,8 @@ services:
     volumes:
       - ./apache/www/:/var/www
     container_name: fpm
+    stdin_open: true
+    tty: true
     ports:
       - "9000:9000"
     networks: 
@@ -28,6 +30,8 @@ services:
     container_name: mysql
     ports:
       - "3307:3306"
+    stdin_open: true
+    tty: true
     volumes:
       - ./mysql/data/:/var/lib/mysql/
       - ./mysql/logs/:/var/log/mysql/
@@ -38,6 +42,8 @@ services:
     container_name: memcached
     ports:
       - "11211:11211"
+    stdin_open: true
+    tty: true
     environment:
       - MEMCACHED_CACHE_SIZE=128
 networks:

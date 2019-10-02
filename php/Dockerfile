@@ -6,11 +6,10 @@ COPY php-fpm.d/www.conf /usr/local/etc/php-fpm.d/www.conf
 # ADD sources.list /etc/apt/
 ADD composer.phar /usr/local/bin/composer
 RUN chmod 755 /usr/local/bin/composer
-# RUN apt-get update \
-# 	&& apt-get install -y libmemcached-dev zlib1g-dev \
-# 	&& pecl install memcached \
-# 	&& pecl install xdebug \
-# 	&& docker-php-ext-enable memcached xdebug
+RUN apt-get update \
+	&& apt-get install -y libmemcached-dev zlib1g-dev \
+	&& pecl install memcached \
+	&& pecl install xdebug \
+	&& docker-php-ext-enable memcached xdebug
 VOLUME /var/www/
-CMD ["start.sh"]
 

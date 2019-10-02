@@ -6,3 +6,5 @@
 [Wed Jun 26 09:12:54.538018 2019] [proxy_fcgi:error] [pid 93:tid 139864922052352] [client 172.19.0.1:47476] AH01071: Got error 'PHP message: PHP Parse error:  syntax error, unexpected '$mc' (T_VARIABLE) in /var/www/index.php on line 3\n'
 [Wed Jun 26 09:12:55.045732 2019] [proxy_fcgi:error] [pid 93:tid 139864913659648] [client 172.19.0.1:47476] AH01071: Got error 'PHP message: PHP Parse error:  syntax error, unexpected '$mc' (T_VARIABLE) in /var/www/index.php on line 3\n'
 [Wed Jun 26 09:12:55.575967 2019] [proxy_fcgi:error] [pid 93:tid 139864905266944] [client 172.19.0.1:47476] AH01071: Got error 'PHP message: PHP Parse error:  syntax error, unexpected '$mc' (T_VARIABLE) in /var/www/index.php on line 3\n'
+[Wed Oct 02 09:14:08.067326 2019] [proxy:error] [pid 8:tid 140374739699456] [client 172.18.0.1:37064] AH00898: DNS lookup failure for: fpm returned by /index.php
+[Wed Oct 02 09:20:28.614740 2019] [proxy_fcgi:error] [pid 9:tid 140487641986816] [client 172.18.0.1:37772] AH01071: Got error 'PHP message: PHP Fatal error:  Uncaught Error: Class 'Memcached' not found in /var/www/index.php:2\nStack trace:\n#0 {main}\n  thrown in /var/www/index.php on line 2\n'
