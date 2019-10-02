@@ -39,7 +39,7 @@ services:
     ports:
       - "11211:11211"
     environment:
-      - MEMCACHED_CACHE_SIZE=256
+      - MEMCACHED_CACHE_SIZE=128
 networks:
   default:
     driver: "bridge"
