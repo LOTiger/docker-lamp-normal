@@ -1,4 +1,4 @@
-# docker-lamp
+# docker-lamp-normal
 一个基于docker构建的lamp应用，快速部署你的应用。
 
 
@@ -18,7 +18,7 @@
 
 2、映射端口在docker-compose.yml中可以修改，同样需要重新build。
 
-3、各个应用的日志文件，redis和mysql的数据文件使用共享目录挂载到容器中，文件都在host机对应应用的文件夹下。
+3、各个应用的日志文件，mysql的数据文件使用共享目录挂载到容器中，文件都在host机对应应用的文件夹下。
 
 4、如php的memcached拓展没有显示安装，则需要进入到fpm容器里运行安装php的memcached拓展，具体命令如下
 ```shell
